@@ -1,0 +1,28 @@
+.product-list-container {
+    margin-top: 2rem;
+}
+
+.product-list-category {
+    margin-bottom: 2rem;
+}
+
+.product-list-category-title {
+    border-radius: 8px;
+    color: #083008;
+    font-weight: bold;
+    max-width: 30rem;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+}
+
+.product-list-category-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .product-list-category-products {
+        align-items: center;
+        flex-direction: column;
+    }
+}

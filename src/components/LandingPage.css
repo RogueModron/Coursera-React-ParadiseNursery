@@ -1,0 +1,51 @@
+.landing-page-container {
+    align-items: center;
+    background: rgb(8, 48, 8);
+    background-image:  linear-gradient(180deg, rgba(0,0,0,0.50) 80%, rgba(255,255,255,0) 100%), url('https://cdn.pixabay.com/photo/2022/01/09/09/38/variegated-leaf-6925639_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.landing-page-title {
+    font-size: 3rem;
+}
+
+.landing-page-description {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.landing-page-action {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.landing-page-button {
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    color: rgb(8, 48, 8);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.6em 1.2em;
+}
+
+.landing-page-button:focus,
+.landing-page-button:focus-visible {
+    outline: 4px dotted white;
+}
+
+.landing-page-button:hover {
+    border-color: rgb(8, 48, 8);
+}

@@ -1,0 +1,85 @@
+.shopping-card-container {
+    align-items: center;
+    background: #083008;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.25rem;
+    width: 30vw;
+}
+
+.shopping-card-name {
+    padding: 0.5rem;
+}
+
+.shopping-card-image {
+    align-content: center;
+    border-radius: 8px;
+    display: grid;
+    height: 300px;
+    overflow: clip;
+    width: 300px;
+}
+
+.shopping-card-image img {
+    border-radius: 8px;
+    width: 300px;
+}
+
+.shopping-card-cost,
+.shopping-card-subtotal {
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.shopping-card-quantity-container {
+    display: flex;
+}
+
+.shopping-card-quantity-control {
+    padding: 0.25rem 0.5rem;
+    width: 3rem;
+}
+
+.shopping-card-quantity {
+    text-align: center;
+    margin: auto;
+    width: 5rem;
+}
+
+
+.shopping-card-quantity-control,
+.shopping-card-delete {
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    color: rgb(8, 48, 8);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 0.5em 1em;
+}
+
+.shopping-card-quantity-control:focus,
+.shopping-card-quantity-control:focus-visible,
+.shopping-card-delete:focus,
+.shopping-card-delete:focus-visible {
+    outline: 4px dotted white;
+}
+
+.shopping-card-quantity-control:hover,
+.shopping-card-delete:hover {
+    background-color: rgb(8, 48, 8);
+    border: 3px solid white;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    .shopping-card-container {
+        width: 90vw;
+    }
+}
