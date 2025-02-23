@@ -25,6 +25,8 @@ jobs:
   # From:
   #   https://vite.dev/guide/static-deploy
   #
+  # And 'base' passed via npm.
+  #
   deploy:
     environment:
       name: github-pages
@@ -41,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: npm run build
+        run: npm run build -- --base=/Coursera-React-ParadiseNursery/
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
