@@ -1,8 +1,11 @@
 import './MainHeader.css';
+import { useBaseHref } from '../hooks/useBaseHref';
 import Cart from './Cart';
 import Logo from "./Logo";
 
 function MainHeader({ cartItems, onProductsClick, onCartClick }) {
+    const baseHref = useBaseHref();
+
     /*
     const totalItems = cartItems.reduce(
         (total, item) => total + item.quantity,
@@ -19,7 +22,7 @@ function MainHeader({ cartItems, onProductsClick, onCartClick }) {
                     <Logo/>
                 </div>
                 <div className="main-header-title">
-                    <a className="main-header-link" href="/">
+                    <a className="main-header-link" href={baseHref}>
                         Paradise Nursery
                     </a>
                 </div>

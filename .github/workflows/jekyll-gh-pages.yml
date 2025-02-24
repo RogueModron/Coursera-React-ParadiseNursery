@@ -25,7 +25,9 @@ jobs:
   # From:
   #   https://vite.dev/guide/static-deploy
   #
-  # And 'base' passed via npm.
+  # And 'base' passed via npm:
+  #   https://github.com/vitejs/vite/discussions/12242
+  #   https://stackoverflow.com/questions/58467939/is-there-a-way-to-get-the-project-folder-name-only-on-a-github-action
   #
   deploy:
     environment:
@@ -43,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: npm run build -- --base=/Coursera-React-ParadiseNursery/
+        run: npm run build -- --base=${GITHUB_REPOSITORY#*/}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
